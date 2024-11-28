@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biểu mẫu</title>
+</head>
+<style>
+    .div {
+        background-color: rgb(217, 220, 223);
+        
+    }
+
+</style>
+<body>
+    <h1>Điền các thông tin cá nhân</h1>
+    <div class="div">
+        <form action="submit_form.html" method="get" target="_blank">
+            <label for="name"> Họ và tên  </label> <br>
+            <input type="name" id="name" name="name" placeholder="Nhập họ và tên của bạn" required><br>
+            <br>
+            <label for="Email" >Email  </label><br>
+            <input type="email" id="email" name="email" placeholder="Nhập email của bạn" required><br>
+            <br>
+            <label for="password">Password</label><br>
+            <input type="password" id="password" name="password" minlength="8" required placeholder="Nhập mật khẩu"><br>
+            <br>
+            <label for="date">Ngày sinh</label><br>
+            <input type="date" id="date" name="date"><br>
+            <br>
+            <label>Giới tính</label><br>
+            <input type="radio" id="nam" name="gioitinh" value="nam">
+            <label for="nam">Nam</label>
+            <input type="radio" id="nu" name="gioitinh" value="nu">
+            <label for="nu">Nữ</label><br>
+            <br>
+            <label>Sở thích</label><br>
+            <input type="checkbox" id="reading" name="sothich" value="Đọc sách">
+            <label for="reading">Đọc sách</label>
+            <input type="checkbox" id="music" name="sothich" value="Nghe nhạc">
+            <label for="music">Nghe nhạc</label>
+            <input type="checkbox" id="sport" name="sothich" value="Thể thao">
+            <label for="sport">Thể thao</label><br>
+            <br>
+            <label for="avatar">Ảnh đại diện</label>
+            <input type="file" id="avatar" name="avatar"><br>
+            <br>
+            <button type="submit">Gửi</button>
+
+
+          </form>
+    </div>
+</body>
+</html>
